@@ -19,6 +19,7 @@ router.post('/', async (req, res, next) => {
  * READ ALL roles
  * GET /api/roles
  */
+
 router.get('/', async (req, res, next) => {
     try {
         const roles = await Role.find();
